@@ -1,0 +1,34 @@
+#include <iostream>
+#include <complex>
+
+int main() {
+    std::complex<double> z1(1, 1);
+    std::complex<double> z2(3, -1);
+    std::complex<double> z3(-1, 1);
+
+    // Сумма
+    std::complex<double> sum = z1 + z2;
+    std::cout << "Сумма: " << sum << std::endl;
+
+    // Разность
+    std::complex<double> diff = z1 - z2;
+    std::cout << "Разность: " << diff << std::endl;
+
+    // Произведение
+    std::complex<double> product = z1 * z2;
+    std::cout << "Произведение: " << product << std::endl;
+
+    // Частное
+    std::complex<double> quotient = z1 / z2;
+    std::cout << "Частное: " << quotient << std::endl;
+
+    // Четвертая степень числа z1
+    std::complex<double> z1_pow4 = pow(z1, 4);
+    std::cout << "Четвертая степень числа z1: " << z1_pow4 << std::endl;
+
+    // Корень третьей степени числа z3
+    std::complex<double> z3_cbrt = pow(z3, 1.0/3);
+    std::cout << "Корень третьей степени числа z3: " << z3_cbrt << std::endl;
+
+    return 0;
+}
